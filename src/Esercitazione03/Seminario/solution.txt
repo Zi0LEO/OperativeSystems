@@ -1,8 +1,0 @@
-Bravo/a! Sei riuscito/a a decifrare il file. 
-Scrivimi per email, il tuo nome, cognome, matricola, chiave trovata.
-Mandami il codice dell'applicazione (file ZIP) e una breve presentazione in cui esponi la tua soluzione e analizzi il comportamento dell'applicazione al variare del numero di thread (speedup). 
-SISOP-corsoA
-Ciao! 
-
-La chiave corretta è: 0000001301761103
-Tempo impiegato: 0 minuti e 5 secondi

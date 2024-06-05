@@ -40,7 +40,7 @@ public class BruteForceDecrypter implements Runnable {
                 possibleSolution = new String(decrypt(possibleKey));
                 if (possibleSolution.contains(stringToFind)) {
                     solution = possibleSolution.getBytes();
-                    solutionFound = new AtomicBoolean(true);
+                    solutionFound.set(true);
                     rightKey = possibleKey;
                 }
             } catch (Exception ignored) {}

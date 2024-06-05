@@ -9,9 +9,8 @@ public class Main {
         final int numberOfValuesForThread = (Integer.MAX_VALUE) / threadToCreate;
         final int extraValuesToAssign = (Integer.MAX_VALUE) % threadToCreate;
 
-        File inputFile = new File("document2024_A.encrypted");
-        File outputFile = new File("solution.txt");
-
+        File inputFile = new File("./src/Esercitazione03/Seminario/document2024_A.encrypted");
+        File outputFile = new File("./src/Esercitazione03/Seminario/solution.txt");
 
         try(InputStream inputStream = new BufferedInputStream(new FileInputStream(inputFile))){
             BruteForceDecrypter.inputBytes = inputStream.readAllBytes();
