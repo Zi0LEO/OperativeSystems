@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cbcd15e3-3874-44cb-b9ee-df862f7609c3" name="Changes" comment="Added Seminario to this folder">
+      <change afterPath="$PROJECT_DIR$/src/Esercitazione03/Seminario/BruteForceDecrypter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Esercitazione03/Seminario/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Esercitazione03/Seminario/document2024_A.encrypted" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Esercitazione03/Seminario/document2024_B.encrypted" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Esercitazione03/Seminario/solution.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Esercitazione03/Esercizio3_1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Esercitazione03/Esercizio3_1/Test.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Zi0LEO&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Zi0LEO/OperativeSystems.git&quot;,
+    &quot;accountId&quot;: &quot;e9ced834-11f6-4224-943e-6a7080db2d00&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2hE4X9iTepJb6UkNnvU9w6xId9r" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BankAccountTest.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/thecoder/projects/OperativeSystems",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Esercitazione03/Seminario" />
+      <recent name="$PROJECT_DIR$/.idea" />
+      <recent name="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03" />
+      <recent name="$PROJECT_DIR$/src/Esercitazione03" />
+      <recent name="$PROJECT_DIR$/out/production/OperativeSystems" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cbcd15e3-3874-44cb-b9ee-df862f7609c3" name="Changes" comment="" />
+      <created>1717145942956</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717145942956</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1717496889003</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717496889003</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Minor fix">
+      <option name="closed" value="true" />
+      <created>1717498003819</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717498003819</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Completed Esercitazione03">
+      <option name="closed" value="true" />
+      <created>1717505661832</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717505661832</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed dynamic binding, added a little cli interface">
+      <option name="closed" value="true" />
+      <created>1717577602205</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717577602205</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed dynamic binding, added a little cli interface">
+      <option name="closed" value="true" />
+      <created>1717577636606</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717577636606</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <MESSAGE value="Minor fix" />
+    <MESSAGE value="Completed Esercitazione03" />
+    <MESSAGE value="Minor imports fix" />
+    <MESSAGE value="Minor imports fix" />
+    <MESSAGE value="Added Seminario to this folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Seminario to this folder" />
+  </component>
+</project>
