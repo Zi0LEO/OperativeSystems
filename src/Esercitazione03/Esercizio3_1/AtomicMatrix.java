@@ -28,4 +28,14 @@ public class AtomicMatrix extends Matrix{
     public int get(int row, int column) {
         return atomicMatrix[row][column].get();
     }
+
+    @Override
+    public int getRows() {
+        return atomicMatrix.length;
+    }
+
+    @Override
+    public int getColumns() {
+        return atomicMatrix[0].length;
+    }
 }

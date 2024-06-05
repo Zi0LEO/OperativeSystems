@@ -8,4 +8,8 @@ public abstract class Matrix {
 
     public abstract int get(int row, int column);
 
+    public abstract int getRows();
+
+    public abstract int getColumns();
+
 }
