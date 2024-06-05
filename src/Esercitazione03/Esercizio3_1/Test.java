@@ -1,8 +1,6 @@
 package Esercitazione03.Esercizio3_1;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Test {
     static final int ROWS = 30;
