@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbcd15e3-3874-44cb-b9ee-df862f7609c3" name="Changes" comment="Added project unversioned files">
+    <list default="true" id="cbcd15e3-3874-44cb-b9ee-df862f7609c3" name="Changes" comment="fixed directories issue">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/BruteForceDecrypter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/BruteForceDecrypter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/solution.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Esercitazione03/Seminario/BruteForceDecrypter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Esercitazione03/Seminario/BruteForceDecrypter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Esercitazione03/Seminario/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Esercitazione03/Seminario/Main.java" afterDir="false" />
@@ -138,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717579151324</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed directories issue">
+      <option name="closed" value="true" />
+      <created>1717598384787</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717598384787</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +169,7 @@
     <MESSAGE value="Minor imports fix" />
     <MESSAGE value="Added Seminario to this folder" />
     <MESSAGE value="Added project unversioned files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added project unversioned files" />
+    <MESSAGE value="fixed directories issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed directories issue" />
   </component>
 </project>
