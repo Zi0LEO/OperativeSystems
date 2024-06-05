@@ -1,3 +1,5 @@
+/src/Esercitazione03/Seminario/solution.txt
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
@@ -27,8 +29,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-
-solution.txt
 
 # Default ignored files
 /shelf/
