@@ -20,12 +20,22 @@ public class IntMatrix extends Matrix{
 
     @Override
     public void decrement(int row, int column) {
-        intMatrix[row][column]++;
+        intMatrix[row][column]--;
 
     }
 
     @Override
     public int get(int row, int column) {
         return intMatrix[row][column];
+    }
+
+    @Override
+    public int getRows() {
+        return intMatrix.length;
+    }
+
+    @Override
+    public int getColumns() {
+        return intMatrix[0].length;
     }
 }

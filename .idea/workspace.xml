@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbcd15e3-3874-44cb-b9ee-df862f7609c3" name="Changes" comment="fixed gitignore">
-      <change afterPath="$PROJECT_DIR$/src/Esercitazione03/example/BankAccountSemaphores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Esercitazione04/Esercizio4_1/MutexTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Esercitazione04/Esercizio4_1/SyncTest.java" afterDir="false" />
+    <list default="true" id="cbcd15e3-3874-44cb-b9ee-df862f7609c3" name="Changes" comment="Fixed gitignore">
+      <change afterPath="$PROJECT_DIR$/src/Esercitazione04/Esercizio4_3/ElementModifierSemaphores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Esercitazione04/Esercizio4_3/Esercizio4_3Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/solution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Seminario/solution.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/example/BankAccountTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/example/BankAccountTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Esercitazione03/example/BankAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Esercitazione03/example/BankAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Esercizio3_1/IntMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Esercizio3_1/IntMatrix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Esercizio3_1/Test$ExecutionType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Esercizio3_1/Test$ExecutionType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Esercizio3_1/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OperativeSystems/Esercitazione03/Esercizio3_1/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Esercitazione03/Esercizio3_1/IntMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Esercitazione03/Esercizio3_1/IntMatrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Esercitazione03/Esercizio3_1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Esercitazione03/Esercizio3_1/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Esercitazione04/Esercizio4_1/SyncTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Esercitazione04/Esercizio4_1/SyncTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Esercitazione04/Esercizio4_2/Esercizio4_2Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Esercitazione04/Esercizio4_2/Esercizio4_2Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BankAccountTest.executor": "Run",
+    "Application.Esercizio4_2Test.executor": "Run",
+    "Application.Esercizio4_3Test.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MutexTest.executor": "Run",
     "Application.SyncTest.executor": "Run",
@@ -165,7 +169,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717598507580</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implemented Esercizio 4_1">
+      <option name="closed" value="true" />
+      <created>1717601267236</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1717601267236</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added getters methods and relative signatures">
+      <option name="closed" value="true" />
+      <created>1717604642334</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1717604642334</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed gitignore">
+      <option name="closed" value="true" />
+      <created>1717604807052</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717604807052</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +217,9 @@
     <MESSAGE value="Added project unversioned files" />
     <MESSAGE value="fixed directories issue" />
     <MESSAGE value="fixed gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed gitignore" />
+    <MESSAGE value="Implemented Esercizio 4_1" />
+    <MESSAGE value="Added getters methods and relative signatures" />
+    <MESSAGE value="Fixed gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed gitignore" />
   </component>
 </project>

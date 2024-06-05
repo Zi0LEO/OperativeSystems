@@ -3,8 +3,6 @@ package Esercitazione03.Esercizio3_1;
 import java.util.Scanner;
 
 public class Test {
-    static final int ROWS = 30;
-    static final int COLUMNS = 50;
     public enum ExecutionType{
         THREAD_SAFE,
         NON_THREAD_SAFE
@@ -34,7 +32,8 @@ public class Test {
             }
         }
 
-
+        final int ROWS = 30;
+        final int COLUMNS = 50;
         final int TIMES = 500000;
         final boolean TO_INCREASE = true;
         Matrix matrix = (executionType == ExecutionType.THREAD_SAFE) ? new AtomicMatrix(ROWS, COLUMNS) : new IntMatrix(ROWS,COLUMNS);
@@ -71,9 +70,11 @@ public class Test {
     }
 
     public static void printMatrix(Matrix matrix) {
-        for (int i = 0; i < ROWS; i++) {
+        final int rows = matrix.getRows();
+        final int columns = matrix.getColumns();
+        for (int i = 0; i < rows; i++) {
             System.out.print("[ ");
-            for (int j = 0; j < COLUMNS; j++)
+            for (int j = 0; j < columns; j++)
                 System.out.print(matrix.get(i,j) + " ");
             System.out.println("]");
         }

@@ -1,7 +1,6 @@
 package Esercitazione04.Esercizio4_1;
 
 import java.util.concurrent.Semaphore;
-import java.util.function.BiPredicate;
 
 public class SyncTest {
 
