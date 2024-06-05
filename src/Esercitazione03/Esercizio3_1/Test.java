@@ -1,37 +1,60 @@
 package Esercitazione03.Esercizio3_1;
 
+import java.sql.SQLOutput;
+import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Test {
     static final int ROWS = 30;
     static final int COLUMNS = 50;
-    static int[][] matrix = new int[ROWS][COLUMNS];
+    public enum ExecutionType{
+        THREAD_SAFE,
+        NON_THREAD_SAFE
+    }
 
     public static void main(String[] args) throws InterruptedException {
 
-        final int TIMES = 50000;
-        final boolean TO_INCREASE = true;
-        AtomicInteger[][] atomicMatrix = new AtomicInteger[ROWS][COLUMNS];
+        Scanner in =  new Scanner(System.in);
+        boolean correctValue = false;
+        ExecutionType executionType = null;
 
-        for(int i = 0; i < ROWS; i++){
-            for(int j = 0; j < COLUMNS; j++) {
-                matrix[i][j] = 0;
-                atomicMatrix[i][j] = new AtomicInteger(0);
+        while(!correctValue) {
+            System.out.println("Select execution type:\n 1 - Thread-Safe \n 2 - Non Thread-Safe");
+
+            String input = in.nextLine();
+            switch (input) {
+                case "1":
+                    executionType = ExecutionType.THREAD_SAFE;
+                    correctValue = true;
+                    break;
+                case "2":
+                    correctValue = true;
+                    executionType = ExecutionType.NON_THREAD_SAFE;
+                    break;
+                default:
+                    System.out.println("Incorrect value");
             }
         }
-        printMatrix();
 
+
+        final int TIMES = 500000;
+        final boolean TO_INCREASE = true;
+        Matrix matrix = (executionType == ExecutionType.THREAD_SAFE) ? new AtomicMatrix(ROWS, COLUMNS) : new IntMatrix(ROWS,COLUMNS);
+
+        printMatrix(matrix);
+
+        long start = System.nanoTime();
 
         Thread[] threads = new Thread[ROWS + COLUMNS];
         for(int i = 0; i < COLUMNS; i++){
-            ElementModifier em = new ElementModifierAtomic(i, atomicMatrix, TIMES, TO_INCREASE, ROWS);
+            ElementModifier em = new ElementModifier(i, TIMES, TO_INCREASE, ROWS, matrix);
             Thread thread = new Thread(em);
             thread.start();
             threads[i] = thread;
         }
 
         for(int i = 0; i < ROWS; i++){
-            ElementModifier em2 = new ElementModifierAtomic(i, atomicMatrix, TIMES, !TO_INCREASE, COLUMNS);
+            ElementModifier em2 = new ElementModifier(i, TIMES, !TO_INCREASE, COLUMNS, matrix);
             Thread thread = new Thread(em2);
             thread.start();
             threads[COLUMNS + i] = thread;
@@ -40,25 +63,23 @@ public class Test {
         for(Thread t: threads)
             t.join();
 
-        for(int i = 0; i < ROWS; i++){
-            for(int j = 0; j < COLUMNS; j++)
-                matrix[i][j] = atomicMatrix[i][j].get();
-        }
-        printMatrix();
+        long end = System.nanoTime();
+
+        printMatrix(matrix);
 
 
+        System.out.println("Needed time: " + (end - start) / 1_000_000);
 
     }
 
-    public static void printMatrix() {
+    public static void printMatrix(Matrix matrix) {
         for (int i = 0; i < ROWS; i++) {
             System.out.print("[ ");
             for (int j = 0; j < COLUMNS; j++)
-                System.out.print(matrix[i][j] + " ");
+                System.out.print(matrix.get(i,j) + " ");
             System.out.println("]");
         }
         System.out.println();
         System.out.println();
     }
-
 }
