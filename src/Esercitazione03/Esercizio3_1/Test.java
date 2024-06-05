@@ -12,7 +12,7 @@ public class Test {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Scanner in =  new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         boolean correctValue = false;
         ExecutionType executionType = null;
 
