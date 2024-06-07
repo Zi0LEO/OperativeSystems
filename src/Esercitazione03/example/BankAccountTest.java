@@ -4,7 +4,7 @@ public class BankAccountTest {
 
     public static void main(String[] args) throws InterruptedException {
         final int STARTING_AMOUNT = 100_000;
-        BankAccount account = new BankAccountSemaphores(STARTING_AMOUNT);
+        BankAccount account = new BankAccountLC(STARTING_AMOUNT);
         int customersNumber = 200;
         int amount = 100;
         int operationsNumber = 5000;
