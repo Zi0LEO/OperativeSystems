@@ -5,10 +5,9 @@ import java.util.concurrent.Semaphore;
 public class BookSemaphores extends Book{
 
     private int readersNumber;
+    Semaphore reading = new Semaphore(1); //ensures mutex on readersNumber variable;
     Semaphore mutex = new Semaphore(1); //ensures only 1 writer at a time can write and
                                                 // that book is either read or written at a time
-
-    Semaphore reading = new Semaphore(1); //ensures mutex on readersNumber variable;
 
     public BookSemaphores(){
         readersNumber = 0;
