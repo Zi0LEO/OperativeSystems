@@ -2,9 +2,9 @@ package ClassicProblems.ProducerConsumer;
 
 public abstract class Buffer {
 
-    public int[] buffer;
-    int in;
-    int out;
+    protected int[] buffer;
+    protected int in;
+    protected int out;
 
     public Buffer(int dimension){
         buffer = new int[dimension];
