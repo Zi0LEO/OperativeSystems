@@ -14,11 +14,12 @@ public class Customer implements Runnable{
     public void run() {
         while(true){
             try{
+                //System.out.format("Customer %d wants to cut his hair \n", id);
                 boolean canCut = hall.waitForCut();
                 if(canCut)
                     System.out.format("Customer %d managed to cut his hair \n", id);
-                else
-                    System.out.format("Customer %d went away \n", id);
+                //else
+                    //System.out.format("Customer %d went away \n", id);
             } catch (InterruptedException ie) {
                 System.out.println("Exception in customer " + id);
             }

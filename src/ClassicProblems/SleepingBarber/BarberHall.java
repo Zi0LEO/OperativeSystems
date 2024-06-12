@@ -21,7 +21,7 @@ public abstract class BarberHall {
     }
 
     public static void main(String[] args) {
-        BarberHall hall =  new BarberHallSemaphores(5);
+        BarberHall hall =  new BarberHallLock(5);
         hall.test(6);
     }
 }
