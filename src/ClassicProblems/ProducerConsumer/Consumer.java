@@ -22,6 +22,7 @@ public class Consumer implements Runnable{
 
     private void consume(int i){
         try {
+            System.out.format("consumer %d is consuming \n", Thread.currentThread().getId());
             TimeUnit.SECONDS.sleep(i);
         }catch(InterruptedException ignored){}
     }

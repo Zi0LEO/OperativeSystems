@@ -6,10 +6,10 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class BufferLC extends Buffer{
 
-    private  int elementsNumber = 0;
-    private final Lock lock = new ReentrantLock();
-    private final Condition isEmpty = lock.newCondition();
-    private final Condition isFull = lock.newCondition();
+    protected  int elementsNumber = 0;
+    protected final Lock lock = new ReentrantLock();
+    protected final Condition isEmpty = lock.newCondition();
+    protected final Condition isFull = lock.newCondition();
 
     public BufferLC(int dimension) {
         super(dimension);

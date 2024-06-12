@@ -28,6 +28,7 @@ public class Producer implements Runnable{
 
     private int makeObject(){
         try {
+            System.out.format("producer %d is producing \n", Thread.currentThread().getId());
             Thread.sleep(random.nextInt(MAX_WAITING));
         }catch(InterruptedException ignored){}
         return random.nextInt(MAX_ELEMENT);
