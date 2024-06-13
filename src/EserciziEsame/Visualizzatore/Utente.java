@@ -20,11 +20,9 @@ public class Utente extends Thread{
     public void run() {
         while(true) {
             int numberOfStrings = random.nextInt(MIN_STRINGS, MAX_STRINGS);
-            for (int i = 0; i < numberOfStrings; i++) {
-                try {
-                    queue.inserisciStringa(String.format("Stringa %d dell'utente %d \n", i, id));
-                } catch (InterruptedException ignored) {}
-            }
+            try {
+                queue.inserisciStringhe(numberOfStrings, id);
+            }catch (InterruptedException ignored) {}
         }
     }
 }
