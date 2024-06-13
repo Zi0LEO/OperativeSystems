@@ -11,13 +11,15 @@ public class QueueLock extends ExerciseQueue{
     protected Condition isEmpty = lock.newCondition();
 
     @Override
-    public void inserisciStringa(String string) throws InterruptedException {
+    public void inserisciStringhe(int numStrings, int id) throws InterruptedException {
         lock.lock();
         try{
-            while(queue.size() >= 100)
+            while(queue.size() >= 100 - numStrings)
                 isFull.await();
-            queue.add(string);
-            isEmpty.signal();
+            for(int i = 0; i < numStrings; i++) {
+                queue.add(buildString(i, id));
+                isEmpty.signal();
+            }
         }finally{
             lock.unlock();
         }

@@ -15,7 +15,7 @@ public class Visualizzatore extends Thread{
             try {
                 string = queue.rimuoviStringa();
             }catch(InterruptedException ignored){}
-            System.out.print(string);
+            System.out.println(string);
         }
     }
 }

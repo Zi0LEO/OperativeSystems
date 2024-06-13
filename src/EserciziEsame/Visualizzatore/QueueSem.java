@@ -12,11 +12,13 @@ public class QueueSem extends ExerciseQueue{
 
 
     @Override
-    public void inserisciStringa(String string) throws InterruptedException{
-        postiDisponibili.acquire();
+    public void inserisciStringhe(int numStrings, int id) throws InterruptedException{
+        postiDisponibili.acquire(numStrings);
         mutex.acquire();
-        queue.add(string);
-        queueVuota.release();
+        for (int i = 0; i < numStrings; i++) {
+            queue.add(buildString(i, id));
+            queueVuota.release();
+        }
         mutex.release();
     }
 
