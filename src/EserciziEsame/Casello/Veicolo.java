@@ -5,9 +5,9 @@ import java.util.concurrent.TimeUnit;
 
 public class Veicolo implements Runnable{
 
-    public static final int MIN_KM = 20;
-    public static final int MAX_KM = 30;
-    public static final int TIME_FOR_KM = 1;
+    public static final int MIN_KM = 50;
+    public static final int MAX_KM = 100;
+    public static final int TIME_FOR_KM = 40;
 
     public static final int MIN_TIME_TO_PAY = 3;
     public static final int MAX_TIME_TO_PAY = 6;
@@ -33,7 +33,7 @@ public class Veicolo implements Runnable{
 
     private int viaggia() throws InterruptedException {
         int kmPercorsi = random.nextInt(MIN_KM, MAX_KM);
-        TimeUnit.SECONDS.sleep(TIME_FOR_KM * kmPercorsi);
+        TimeUnit.SECONDS.sleep((long) TIME_FOR_KM * kmPercorsi);
         return kmPercorsi;
     }
 }
