@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class AziendaAgricola {
 
-    protected final int MAX_CAPACITA = 20;
+    protected final int MAX_CAPACITA = 200;
     protected final int PREZZO_SACCO = 3;
 
     protected int incasso;
@@ -24,7 +24,7 @@ public abstract class AziendaAgricola {
     }
 
     protected void riempiMagazzino() throws InterruptedException{
-        TimeUnit.SECONDS.sleep(2);
+        TimeUnit.SECONDS.sleep(10);
     }
 
     public void test(int numClienti) throws InterruptedException {
