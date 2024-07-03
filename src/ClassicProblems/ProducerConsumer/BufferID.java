@@ -13,8 +13,7 @@ public class BufferID extends BufferFIFO {
     lock.lock();
     producerQueue.add(Thread.currentThread());
     try {
-      while (!canPut())
-        isFull.await();
+      while (!canPut()) isFull.await();
       producerQueue.remove();
       buffer[in] = i;
       in = (in + 1) % buffer.length;
@@ -30,8 +29,7 @@ public class BufferID extends BufferFIFO {
     lock.lock();
     consumerQueue.add(Thread.currentThread());
     try {
-      while (!canGet())
-        isEmpty.await();
+      while (!canGet()) isEmpty.await();
       consumerQueue.remove();
       ret = buffer[out];
       out = (out + 1) % buffer.length;
@@ -63,9 +61,7 @@ public class BufferID extends BufferFIFO {
 
   private long searchMinId(LinkedList<Thread> queue) {
     long id = Long.MAX_VALUE;
-    for (Thread thread : queue)
-      if (thread.getId() < id)
-        id = thread.getId();
+    for (Thread thread : queue) if (thread.getId() < id) id = thread.getId();
     return id;
   }
 }

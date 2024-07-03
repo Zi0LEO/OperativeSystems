@@ -1,16 +1,17 @@
 package EserciziEsame.AziendaAgricola;
 
-public class Magazziniere implements Runnable{
+public class Magazziniere implements Runnable {
 
-    AziendaAgricola azienda;
+  AziendaAgricola azienda;
 
-    public Magazziniere(AziendaAgricola azienda){
-        this.azienda = azienda;
+  public Magazziniere(AziendaAgricola azienda) {
+    this.azienda = azienda;
+  }
+
+  @Override
+  public void run() {
+    while (true) {
+      azienda.resettaMagazzino();
     }
-    @Override
-    public void run() {
-        while(true) {
-            azienda.resettaMagazzino();
-        }
-    }
+  }
 }

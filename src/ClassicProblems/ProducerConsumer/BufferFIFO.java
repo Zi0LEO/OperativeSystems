@@ -16,8 +16,7 @@ public class BufferFIFO extends BufferLC {
     lock.lock();
     producerQueue.add(Thread.currentThread());
     try {
-      while (!canPut())
-        isFull.await();
+      while (!canPut()) isFull.await();
       producerQueue.remove();
       buffer[in] = i;
       in = (in + 1) % buffer.length;
@@ -34,8 +33,7 @@ public class BufferFIFO extends BufferLC {
     int ret;
     consumerQueue.add(Thread.currentThread());
     try {
-      while (!canGet())
-        isEmpty.await();
+      while (!canGet()) isEmpty.await();
       consumerQueue.remove();
       ret = buffer[out];
       out = (out + 1) % buffer.length;
