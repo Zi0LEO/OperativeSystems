@@ -1,0 +1,3 @@
+In the multilevel scheme, each entry of the index table will contain a pointer to another index table, and so on for how many levels the table contains. The Logical address will be formed by 9 * n bits, where n is the level of the scheme.
+The first 9 bits will refer to the index of the first index table, so on until the last 9 bits, that will refer to the offset of the data.
+These numbers obviously refer to a memory organized in 512 words blocks.
