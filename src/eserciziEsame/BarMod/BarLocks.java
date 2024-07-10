@@ -1,4 +1,4 @@
-package EserciziEsame.BarMod;
+package eserciziEsame.BarMod;
 
 import java.util.LinkedList;
 import java.util.concurrent.locks.Condition;

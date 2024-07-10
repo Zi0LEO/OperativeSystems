@@ -1,4 +1,4 @@
-package Esercitazione04.Esercizio4_5;
+package esercitazione04.Esercizio4_5;
 
 import java.util.concurrent.Semaphore;
 

@@ -1,4 +1,4 @@
-package Esercitazione04.Esercizio4_3;
+package esercitazione04.Esercizio4_3;
 
 import static Esercitazione03.Esercizio3_1.Test.printMatrix;
 

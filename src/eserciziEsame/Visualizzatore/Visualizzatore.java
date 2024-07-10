@@ -1,4 +1,4 @@
-package EserciziEsame.Visualizzatore;
+package eserciziEsame.Visualizzatore;
 
 public class Visualizzatore extends Thread {
 

@@ -1,4 +1,4 @@
-package EserciziEsame.Visualizzatore;
+package eserciziEsame.Visualizzatore;
 
 import java.util.Random;
 

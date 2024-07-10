@@ -1,4 +1,4 @@
-package EserciziEsame.Casello;
+package eserciziEsame.Casello;
 
 import java.util.LinkedList;
 import java.util.concurrent.locks.Condition;

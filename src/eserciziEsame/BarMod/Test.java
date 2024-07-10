@@ -1,4 +1,4 @@
-package EserciziEsame.BarMod;
+package eserciziEsame.BarMod;
 
 import java.util.concurrent.TimeUnit;
 

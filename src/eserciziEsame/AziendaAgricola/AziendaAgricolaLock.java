@@ -1,4 +1,4 @@
-package EserciziEsame.AziendaAgricola;
+package eserciziEsame.AziendaAgricola;
 
 import java.util.LinkedList;
 import java.util.concurrent.locks.Condition;

@@ -1,4 +1,4 @@
-package EserciziEsame.AziendaAgricola;
+package eserciziEsame.AziendaAgricola;
 
 public class Main {
 

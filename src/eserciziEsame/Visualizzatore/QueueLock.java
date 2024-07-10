@@ -1,4 +1,4 @@
-package EserciziEsame.Visualizzatore;
+package eserciziEsame.Visualizzatore;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;

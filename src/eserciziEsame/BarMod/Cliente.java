@@ -1,4 +1,4 @@
-package EserciziEsame.BarMod;
+package eserciziEsame.BarMod;
 
 public class Cliente implements Runnable {
 
