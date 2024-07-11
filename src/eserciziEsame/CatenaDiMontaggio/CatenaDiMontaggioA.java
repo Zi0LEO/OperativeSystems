@@ -1,14 +1,9 @@
 package eserciziEsame.CatenaDiMontaggio;
 
-import java.util.LinkedList;
-
 public abstract class CatenaDiMontaggioA {
+  abstract void richiediProduzione(int var1, int var2);
 
-  int[] daProdurre = new int[2];
+  abstract void produci(int var1) throws InterruptedException;
 
-  abstract void richiediProduzione(int pezziSx, int pezziDx);
-
-  abstract void produci(int tipo);
-
-  abstract void assembla();
+  abstract void assembla() throws InterruptedException;
 }

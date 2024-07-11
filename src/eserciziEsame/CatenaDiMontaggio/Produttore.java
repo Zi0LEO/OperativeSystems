@@ -1,28 +1,22 @@
 package eserciziEsame.CatenaDiMontaggio;
 
-import java.util.concurrent.TimeUnit;
-
 public class Produttore implements Runnable {
-  public final int PEZZO_SX = 0;
-  public final int PEZZO_DX = 1;
+  public static final int PEZZO_SX = 0;
+  public static final int PEZZO_DX = 1;
   final int TIPO;
+  public CatenaDiMontaggioA cdm;
 
-  public Produttore(int tipo) {
-    TIPO = tipo;
+  public Produttore(CatenaDiMontaggioA var1, int var2) {
+    this.TIPO = var2;
+    this.cdm = var1;
   }
-  
-  @Override
+
   public void run() {
-    try {
-
-      if (TIPO == 0) {
-        TimeUnit.MINUTES.sleep(10);
-
-      } else {
-        TimeUnit.MINUTES.sleep(15);
+    while (true) {
+      try {
+        this.cdm.produci(this.TIPO);
+      } catch (Exception var2) {
       }
-    } catch (Exception e) {
-      // TODO: handle exception
     }
   }
 }
